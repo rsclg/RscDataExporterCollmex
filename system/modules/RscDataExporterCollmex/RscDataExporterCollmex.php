@@ -76,7 +76,7 @@ class RscDataExporterCollmex extends AbstractDataExporter
 			$arrRowData[] = "(NULL)"; // BIC (BANK)
 			$arrRowData[] = "(NULL)"; // Bankname (BANK)
 			$arrRowData[] = utf8_decode($dbResult->xt_club_membernumber.",".$dbResult->lastname.",".$dbResult->firstname); // Sepa-Mandatsreferenz
-			$arrRowData[] = ""; // Datum Unterschrift
+			$arrRowData[] = "(NULL)"; // Datum Unterschrift
 			$arrRowData[] = date("Ymd", $dbResult->dateOfBirth); // Geburtsdatum
 			$arrRowData[] = date("Ymd", $dbResult->dateAdded); // Eintrittsdatum
 			$arrRowData[] = date("Ymd", $dbResult->stop); // Austrittsdatum
