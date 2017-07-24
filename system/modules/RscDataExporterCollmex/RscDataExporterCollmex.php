@@ -159,7 +159,13 @@ class RscDataExporterCollmex extends AbstractDataExporter
 			}
 		}
 		
-		return implode(",", $arrGroups);
+		$strGroups = implode(",", $arrGroups);
+		
+		if (empty($strGroups))
+		{
+			$strGroups = "0";
+		}
+		return $strGroups;
 	}
 }
 
